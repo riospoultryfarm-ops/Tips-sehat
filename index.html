@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KITA SEHAT</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#16a34a">
+<style>
+body{
+  font-family:Arial, sans-serif;
+  background:linear-gradient(#e8f5e9,#ffffff);
+  margin:0;padding:16px
+}
+header{
+  background:#16a34a;
+  color:white;
+  padding:16px;
+  border-radius:16px;
+  text-align:center;
+  margin-bottom:16px
+}
+.card{
+  background:white;
+  padding:16px;
+  border-radius:16px;
+  margin-bottom:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1)
+}
+.card h3{color:#16a34a;margin-top:0}
+footer{
+  text-align:center;
+  font-size:12px;
+  color:#666;
+  margin-top:20px
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>🩺 KITA SEHAT</h1>
+  <p>Edukasi Kesehatan Keluarga</p>
+</header>
+
+<div class="card">
+  <h3>🩹 Penanganan Luka</h3>
+  <p>Bersihkan luka, hentikan perdarahan, gunakan antiseptik, dan tutup dengan perban.</p>
+</div>
+
+<div class="card">
+  <h3>🩸 Diabetes</h3>
+  <p>Kontrol gula darah, makan sehat, olahraga rutin, dan cek kesehatan.</p>
+</div>
+
+<div class="card">
+  <h3>❤️ Hipertensi</h3>
+  <p>Kurangi garam, istirahat cukup, olahraga, dan kelola stres.</p>
+</div>
+
+<div class="card">
+  <h3>🚰 Diare</h3>
+  <p>Minum oralit, banyak cairan, dan jaga kebersihan makanan.</p>
+</div>
+
+<footer>
+  <p>KITA SEHAT © 2026 | Offline App</p>
+</footer>
+
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
